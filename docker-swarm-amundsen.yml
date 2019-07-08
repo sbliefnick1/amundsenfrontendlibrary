@@ -1,0 +1,12 @@
+version: '3'
+services:
+    amundsensearch:
+        environment:
+            - PROXY_ENDPOINT=elasticsearch
+    amundsenmetadata:
+        environment:
+            - PROXY_HOST=bolt://neo4j
+
+#configs:
+#    test_databuilder:
+#        file: ../amundsendatabuilder/example/scripts/test_data_loader.py
